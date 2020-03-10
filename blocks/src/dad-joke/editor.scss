@@ -1,0 +1,46 @@
+//--------------------------------------------------------------
+// EDITOR STYLES
+// CSS for just Backend enqueued after style.scss
+//--------------------------------------------------------------
+
+@import '../common';
+
+.wp-block {
+
+	.button-container {
+		background: $color-black;
+		border: rem(1) solid $color-dove-gray;
+		border-radius: rem(2);
+		margin: 0 0 rem(10) 0;
+		padding: 22% 0;
+		text-align: center;
+	} // .button-container
+
+	.wp-block-wds-card-block-main {
+		background-color: $color-mineshaft;
+		border: 1px solid $color-blue;
+		color: $color-white;
+		padding: rem(10);
+
+		.image {
+			height: auto;
+			max-height: rem(500);
+			object-fit: cover;
+			width: 100%;
+		} // .image
+
+		.heading {
+			background-color: $color-dove-gray;
+			font-size: rem(24);
+			font-weight: 600;
+			padding: rem(5);
+			text-align: center;
+		} // .heading
+
+		.rich-text {
+			font-size: rem(20);
+			text-align: center;
+		} // .rich-text
+	} // .wp-block-wds-card-block-main
+
+} // .wp-block

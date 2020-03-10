@@ -1,0 +1,37 @@
+//--------------------------------------------------------------
+// STYLES
+// CSS for both Frontend+Backend.
+//--------------------------------------------------------------
+@import '../common';
+
+.wp-block-wds-card-block-main {
+	background-color: $color-mineshaft;
+	border: 1px solid $color-blue;
+	color: $color-white;
+	padding: rem(10);
+
+	.card-image {
+		height: auto;
+		max-height: rem(500);
+		object-fit: cover;
+		width: 100%;
+	} // .card-image
+
+	.card-title {
+		background-color: $color-dove-gray;
+		margin: rem(20) 0 rem(30);
+		padding: rem(5);
+		text-align: center;
+	} // .card-title
+
+	.card-body {
+		text-align: center;
+
+		p {
+			line-height: 1.5;
+			padding: rem(10) 0;
+		} // p
+
+	} // .card-body
+
+} // .wp-block-wds-card-block-main
