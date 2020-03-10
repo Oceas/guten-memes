@@ -1,7 +1,7 @@
 {
   "name": "gc-memes",
   "version": "1.0.0",
-  "description": "GC Memes. Building comedy one joke at a time.",
+  "description": "Guten Memes. Building comedy one joke at a time.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -9,10 +9,10 @@ import './style.scss';
 
 import axios from "axios";
 
-registerBlockType('gc-card-block/dad-joke', {
+registerBlockType('gc-memes/dad-joke', {
 	title: __('Dad Joke'), // Block title.
 	icon: 'slides',
-	category: 'common',
+	category: 'jokes',
 	attributes: {
 		joke: {
 			source: 'text',

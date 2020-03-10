@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: GC Memes
+ * Plugin Name: Guten Memes
  * Plugin URI: https://github.com/khleomix
  * Description: Building jokes one day at a time.
  * Author: Scott Anderson
@@ -10,7 +10,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
  * @since   1.0.0
- * @package gc-dad-jokes
+ * @package gc-memes
  */
 
 // Exit if accessed directly.
@@ -71,6 +71,18 @@ function gc_register_gutenberg_card_block() {
 			'style'         => 'gc-card-block-style',
 		)
 	);
+
+	add_filter( 'block_categories', function( $categories, $post ) {
+		return array_merge(
+			$categories,
+			array(
+				array(
+					'slug'  => 'jokes',
+					'title' => 'Jokes',
+				),
+			)
+		);
+	}, 10, 2 );
 }
 
 add_action( 'init', 'gc_register_gutenberg_card_block' );
